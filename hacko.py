@@ -2,7 +2,6 @@ import aiml
 import os
 import sys
 sys.path.append("modules/")
-import helper
 import command
 
 kernel = aiml.Kernel()

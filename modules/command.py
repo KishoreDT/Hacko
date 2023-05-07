@@ -1,7 +1,6 @@
 import os
 import sys
 sys.path.append("modules/")
-import helper
 import filescan
 import urlscan
 import ipscan
@@ -10,7 +9,9 @@ def Commands(message):
 
 	try:
 		if message[0] == "!help":
-			helper.Features() # Write all features of the bot
+			print("URL scan: !urlscan <URL-TO-SCAN>")
+			print("File scan: !filescan <PATH-TO-FILE>")
+			print("IP scan: !ipscan <IP-TO-SCAN>")
 			
 		elif message[0] == "!filescan":
 			if message[1]:
