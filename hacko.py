@@ -14,7 +14,7 @@ os.system('cls' if os.name == 'nt' else 'clear') # clear terminal
 
 # Press CTRL-C to break this loop
 while True:
-    message = raw_input(">> ")
+    message = input(">> ")
     if message == "quit" or message == "exit": # exit from chat
         print("bye...")
         exit()
